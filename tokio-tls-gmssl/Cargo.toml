@@ -21,6 +21,9 @@ for nonblocking I/O streams.
 """
 categories = ["asynchronous", "network-programming"]
 
+[features]
+vendored = ["native-tls-gmssl/vendored"]
+
 [dependencies]
 native-tls-gmssl = { git = "https://github.com/tujili2022/native_tls_gmssl.git", branch = "main"}
 tokio = "1.0"
